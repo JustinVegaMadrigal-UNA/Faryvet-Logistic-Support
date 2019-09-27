@@ -12,5 +12,7 @@ namespace FaryvetLogisticSupport.Models
         {
 
         }
+
+        public DbSet <FARYVET_FLS_Conductor> FARYVET_FLS_Conductor { get; set; }
     }
 }
