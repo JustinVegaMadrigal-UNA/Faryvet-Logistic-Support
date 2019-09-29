@@ -44,6 +44,44 @@ namespace FaryvetLogisticSupport.Migrations
 
                     b.ToTable("FARYVET_FLS_Conductor");
                 });
+
+            modelBuilder.Entity("FaryvetLogisticSupport.Models.FARYVET_FLS_VehiculoTransporte", b =>
+                {
+                    b.Property<string>("NumeroPlaca")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("AnnioFabricacion");
+
+                    b.Property<bool>("CVOSenasa");
+
+                    b.Property<float>("CapacidadCarga");
+
+                    b.Property<string>("Comentario")
+                        .IsRequired();
+
+                    b.Property<float>("CostoMarchamo");
+
+                    b.Property<string>("Estado")
+                        .IsRequired();
+
+                    b.Property<string>("FechaRiteve")
+                        .IsRequired();
+
+                    b.Property<bool>("IsEntrega");
+
+                    b.Property<string>("LicenciaRequerida")
+                        .IsRequired();
+
+                    b.Property<string>("Marca")
+                        .IsRequired();
+
+                    b.Property<string>("Modelo")
+                        .IsRequired();
+
+                    b.HasKey("NumeroPlaca");
+
+                    b.ToTable("FARYVET_FLS_VehiculoTransporte");
+                });
 #pragma warning restore 612, 618
         }
     }
