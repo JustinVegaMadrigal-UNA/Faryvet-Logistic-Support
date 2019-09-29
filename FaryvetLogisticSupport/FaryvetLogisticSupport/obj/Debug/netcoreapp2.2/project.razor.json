@@ -3004,6 +3004,11 @@
       "FilePath": "Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages\\Conductores\\IndexConductores.cshtml",
+      "TargetPath": "Pages\\Conductores\\IndexConductores.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

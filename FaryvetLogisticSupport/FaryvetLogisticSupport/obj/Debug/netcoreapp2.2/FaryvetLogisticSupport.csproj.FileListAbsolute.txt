@@ -29,3 +29,4 @@ C:\Users\Justin\Documents\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport
 C:\Users\Justin\Documents\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\FaryvetLogisticSupport.pdb
 C:\Users\Justin\Documents\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\FaryvetLogisticSupport.csproj.CopyComplete
 C:\Users\Justin\Documents\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\Conductores\CreateConductores.g.cshtml.cs
+C:\Users\Justin\Documents\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\Conductores\IndexConductores.g.cshtml.cs
