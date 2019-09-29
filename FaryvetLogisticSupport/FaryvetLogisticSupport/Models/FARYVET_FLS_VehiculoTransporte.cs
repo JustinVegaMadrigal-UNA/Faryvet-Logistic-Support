@@ -27,6 +27,10 @@ namespace FaryvetLogisticSupport.Models
         public float CapacidadCarga { get; set; }
 
         [Required]
+        [Display(Name = "Capacidad de combustible")]
+        public float CapacidadCombustible { get; set; }
+
+        [Required]
         [Display(Name = "Fecha de RITEVE")]
         public String FechaRiteve { get; set; }
 

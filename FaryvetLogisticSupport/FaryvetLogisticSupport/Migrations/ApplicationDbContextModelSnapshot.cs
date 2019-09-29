@@ -56,6 +56,8 @@ namespace FaryvetLogisticSupport.Migrations
 
                     b.Property<float>("CapacidadCarga");
 
+                    b.Property<float>("CapacidadCombustible");
+
                     b.Property<string>("Comentario")
                         .IsRequired();
 
