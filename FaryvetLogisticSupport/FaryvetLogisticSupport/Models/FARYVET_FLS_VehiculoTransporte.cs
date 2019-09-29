@@ -4,11 +4,13 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace FaryvetLogisticSupport.Models
 {
     public class FARYVET_FLS_VehiculoTransporte
     {
         [Key]
+        [Required]
         [Display(Name = "Número de placa")]
         public String NumeroPlaca { get; set; }
 
@@ -49,7 +51,6 @@ namespace FaryvetLogisticSupport.Models
         [Display(Name = "¿Está realizando una entrega?")]
         public bool IsEntrega { get; set; }
 
-        [Required]
         [Display(Name = "Comentarios")]
         public String Comentario { get; set; }
 

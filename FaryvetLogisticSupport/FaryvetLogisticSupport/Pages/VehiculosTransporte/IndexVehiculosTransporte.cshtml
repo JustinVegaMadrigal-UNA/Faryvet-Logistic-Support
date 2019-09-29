@@ -5,9 +5,7 @@
 }
 
 <h1>Vehiculos de Transporte</h1>
-<a asp-page="CreateVehiculosTransporte" class="btn btn-success form-control">
-    Agregar vehiculo
-</a>
+
 @if (Model.FARYVET_FLS_VehiculoTransporte.Count() > 0)
 {
     <br />
@@ -58,55 +56,55 @@
         </tr>
         @foreach (var item in Model.FARYVET_FLS_VehiculoTransporte)
         {
-    <tr>
-        <td>
-            @Html.DisplayFor(m => item.NumeroPlaca)
-        </td>
-        <td>
-            @Html.DisplayFor(m => item.Marca)
-        </td>
-        <td>
-            @Html.DisplayFor(m => item.Modelo)
-        </td>
-        <td>
-            @Html.DisplayFor(m => item.AnnioFabricacion)
-        </td>
-        <td>
-            @Html.DisplayFor(m => item.CapacidadCarga)
-        </td>
-        <td>
-            @Html.DisplayFor(m => item.CapacidadCombustible)
-        </td>
-        <td>
-            @Html.DisplayFor(m => item.FechaRiteve)
-        </td>
-        <td>
-            @Html.DisplayFor(m => item.CostoMarchamo)
-        </td>
-        <td>
-            @Html.DisplayFor(m => item.CVOSenasa)
-        </td>
-        <td>
-            @Html.DisplayFor(m => item.Estado)
-        </td>
-        <td>
-            @Html.DisplayFor(m => item.IsEntrega)
-        </td>
-        <td>
-            @Html.DisplayFor(m => item.Comentario)
-        </td>
-        <td>
-            @Html.DisplayFor(m => item.LicenciaRequerida)
-        </td>
-        <td>
-            <a asp-route-Id="@item.NumeroPlaca" asp-page="EditConductor" class="btn btn-success btn-sm">
-                Editar
-            </a>
-            <button class="btn btn-danger btn-sm">
-                Eliminar
-            </button>
-        </td>
-    </tr>
+            <tr>
+                <td>
+                    @Html.DisplayFor(m => item.NumeroPlaca)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Marca)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Modelo)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.AnnioFabricacion)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.CapacidadCarga)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.CapacidadCombustible)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.FechaRiteve)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.CostoMarchamo)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.CVOSenasa)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Estado)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.IsEntrega)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Comentario)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.LicenciaRequerida)
+                </td>
+                <td>
+                    <a asp-route-Id="@item.NumeroPlaca" asp-page="EditConductor" class="btn btn-success btn-sm">
+                        Editar
+                    </a>
+                    <button class="btn btn-danger btn-sm">
+                        Eliminar
+                    </button>
+                </td>
+            </tr>
         }
     </table>
 }

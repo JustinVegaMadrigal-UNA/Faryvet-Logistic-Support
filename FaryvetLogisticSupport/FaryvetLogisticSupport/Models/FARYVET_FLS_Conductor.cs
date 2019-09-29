@@ -9,6 +9,7 @@ namespace FaryvetLogisticSupport.Models
     public class FARYVET_FLS_Conductor
     {
         [Key]
+        [Required]
         [Display (Name = "Número de indentificación")]
         public String NumeroIdentificacion { get; set; }
 

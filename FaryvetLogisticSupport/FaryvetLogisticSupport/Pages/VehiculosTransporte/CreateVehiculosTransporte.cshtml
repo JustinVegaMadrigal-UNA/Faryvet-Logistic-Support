@@ -9,7 +9,7 @@
 <div class="border">
     <form method="post">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <div class="container">           
+        <div class="container">
             <div class="form-group">
                 <div class="row">
                     <div class="col-6">
@@ -109,7 +109,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_VehiculoTransporte.FechaRiteve" class="form-control" />
+                        <input type = "date" asp-format="{dd-MM-yyyy}" asp-for="FARYVET_FLS_VehiculoTransporte.FechaRiteve" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.FechaRiteve" class="text-danger">
                     </span>
@@ -153,8 +153,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6">
-                        <input asp-for="FARYVET_FLS_VehiculoTransporte.Estado" class="form-control" />
+                    <div class="col-6">                        
+                        <select asp-for="FARYVET_FLS_VehiculoTransporte.Estado" class="form-control">
+                            <option selected ="selected">Disponible</option>
+                            <option>En mantenimiento</option>
+                        </select> 
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.Estado" class="text-danger">
                     </span>
@@ -199,7 +202,23 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_VehiculoTransporte.LicenciaRequerida" class="form-control" />
+                        <select asp-for="FARYVET_FLS_VehiculoTransporte.LicenciaRequerida" class="form-control">
+                            <option selected="selected">A1</option>
+                            <option>A2</option>
+                            <option>A3</option>
+                            <option>A4</option>
+                            <option>B1</option>
+                            <option>B2</option>
+                            <option>B3</option>
+                            <option>B4</option>
+                            <option>C1</option>
+                            <option>C2</option>
+                            <option>D1</option>
+                            <option>D2</option>
+                            <option>D3</option>
+                            <option>E1</option>
+                            <option>E2</option>
+                        </select>
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.LicenciaRequerida" class="text-danger">
                     </span>
