@@ -25,11 +25,11 @@ namespace FaryvetLogisticSupport.Models
         public int AnnioFabricacion { get; set; }
 
         [Required]
-        [Display(Name = "Capacidad de carga")]
+        [Display(Name = "Capacidad de carga (Kilogramos)")]
         public float CapacidadCarga { get; set; }
 
         [Required]
-        [Display(Name = "Capacidad de combustible")]
+        [Display(Name = "Capacidad de combustible (Litros)")]
         public float CapacidadCombustible { get; set; }
 
         [Required]

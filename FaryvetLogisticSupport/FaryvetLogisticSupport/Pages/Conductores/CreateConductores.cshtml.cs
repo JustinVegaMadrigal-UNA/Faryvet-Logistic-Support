@@ -26,11 +26,17 @@ namespace FaryvetLogisticSupport.Pages.Conductores
         {
             if (!ModelState.IsValid)
             {
-                return Page ( ) ;
+                return Page () ;
             }
-            _dbContext.Add ( FARYVET_FLS_Conductor) ;
-            await _dbContext.SaveChangesAsync ( ) ;
-            return RedirectToPage ("../Index") ;
+            try
+            {
+                _dbContext.Add(FARYVET_FLS_Conductor);
+                await _dbContext.SaveChangesAsync();
+                return RedirectToPage("../Index");
+            }catch(Exception e)
+            {
+                return RedirectToPage("../Error");
+            }
         }
     }
 }

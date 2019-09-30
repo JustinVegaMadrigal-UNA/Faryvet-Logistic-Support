@@ -79,7 +79,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_VehiculoTransporte.CapacidadCarga" class="form-control" />
+                        <input required pattern="[0-9]+[,]*[0-9]*" asp-for="FARYVET_FLS_VehiculoTransporte.CapacidadCarga" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.CapacidadCarga" class="text-danger">
                     </span>
@@ -94,7 +94,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_VehiculoTransporte.CapacidadCombustible" class="form-control" />
+                        <input required pattern="[0-9]+[,]*[0-9]*" asp-for="FARYVET_FLS_VehiculoTransporte.CapacidadCombustible" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.CapacidadCombustible" class="text-danger">
                     </span>
@@ -109,7 +109,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input type = "date" asp-format="{dd-MM-yyyy}" asp-for="FARYVET_FLS_VehiculoTransporte.FechaRiteve" class="form-control" />
+                        <input type = "date" asp-format="{dd-MM-yyyy}" value="2019-01-01" asp-for="FARYVET_FLS_VehiculoTransporte.FechaRiteve" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.FechaRiteve" class="text-danger">
                     </span>
@@ -118,7 +118,7 @@
             <div class="form-group">
                 <div class="row">
                     <div class="col-6">
-                        <label asp-for="FARYVET_FLS_VehiculoTransporte.CostoMarchamo">
+                        <label required pattern="[0-9]+[,]*[0-9]*" asp-for="FARYVET_FLS_VehiculoTransporte.CostoMarchamo">
                         </label>
                     </div>
                 </div>

@@ -19,8 +19,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input disabled asp-for="FARYVET_FLS_VehiculoTransporte.NumeroPlaca" class="form-control" />
-                        <input type="hidden" asp-for="FARYVET_FLS_VehiculoTransporte.NumeroPlaca" class="form-control" />
+                        <input readonly asp-for="FARYVET_FLS_VehiculoTransporte.NumeroPlaca" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.NumeroPlaca" class="text-danger">
                     </span>
@@ -35,7 +34,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_VehiculoTransporte.Marca" class="form-control" />
+                        <input readonly asp-for="FARYVET_FLS_VehiculoTransporte.Marca" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.Marca" class="text-danger">
                     </span>
@@ -50,7 +49,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_VehiculoTransporte.Modelo" class="form-control" />
+                        <input readonly asp-for="FARYVET_FLS_VehiculoTransporte.Modelo" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.Modelo" class="text-danger">
                     </span>
@@ -65,7 +64,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_VehiculoTransporte.AnnioFabricacion" class="form-control" />
+                        <input readonly asp-for="FARYVET_FLS_VehiculoTransporte.AnnioFabricacion" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.AnnioFabricacion" class="text-danger">
                     </span>
@@ -80,7 +79,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_VehiculoTransporte.CapacidadCarga" class="form-control" />
+                        <input readonly asp-for="FARYVET_FLS_VehiculoTransporte.CapacidadCarga" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.CapacidadCarga" class="text-danger">
                     </span>
@@ -95,7 +94,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_VehiculoTransporte.CapacidadCombustible" class="form-control" />
+                        <input readonly asp-for="FARYVET_FLS_VehiculoTransporte.CapacidadCombustible" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.CapacidadCombustible" class="text-danger">
                     </span>
@@ -125,7 +124,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_VehiculoTransporte.CostoMarchamo" class="form-control" />
+                        <input required pattern="[0-9]+[,]*[0-9]*" asp-for="FARYVET_FLS_VehiculoTransporte.CostoMarchamo" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.CostoMarchamo" class="text-danger">
                     </span>
@@ -203,8 +202,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input disabled asp-for="FARYVET_FLS_VehiculoTransporte.LicenciaRequerida" class="form-control"/>
-                        <input type="hidden" asp-for="FARYVET_FLS_VehiculoTransporte.LicenciaRequerida" class="form-control"/>
+                        <input readonly asp-for="FARYVET_FLS_VehiculoTransporte.LicenciaRequerida" class="form-control"/>
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.LicenciaRequerida" class="text-danger">
                     </span>
