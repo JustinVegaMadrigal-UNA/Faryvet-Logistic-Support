@@ -20,10 +20,28 @@ namespace FaryvetLogisticSupport.Pages.Conductores
         [BindProperty]
         public FARYVET_FLS_Conductor FARYVET_FLS_Conductor { get; set; }
 
-        public async Task OnGet(String numeroCedula)
+        public async Task OnGet(String NumeroIdentificacion)
         {
-            Console.WriteLine(numeroCedula);
-            FARYVET_FLS_Conductor = await _dbContext.FARYVET_FLS_Conductor.FindAsync(numeroCedula) ;
+            Console.WriteLine(NumeroIdentificacion);
+            FARYVET_FLS_Conductor = await _dbContext.FARYVET_FLS_Conductor.FindAsync(NumeroIdentificacion) ;
+        }
+
+        public async Task<IActionResult> OnPost()
+        {
+            if (ModelState.IsValid)
+            {
+                var ConductorDB = await _dbContext.FARYVET_FLS_Conductor.FindAsync(FARYVET_FLS_Conductor.NumeroIdentificacion);
+                ConductorDB.Nombre = FARYVET_FLS_Conductor.Nombre;
+                ConductorDB.PrimerApellido = FARYVET_FLS_Conductor.PrimerApellido;
+                ConductorDB.SegundoApellido = FARYVET_FLS_Conductor.SegundoApellido;
+                ConductorDB.FechaContratacion = FARYVET_FLS_Conductor.FechaContratacion;
+                ConductorDB.Estado = FARYVET_FLS_Conductor.Estado;
+                ConductorDB.IsEntrega = FARYVET_FLS_Conductor.IsEntrega;
+
+                await _dbContext.SaveChangesAsync();
+                return RedirectToPage("../Index");
+            }
+            return RedirectToPage();
         }
     }
 }
