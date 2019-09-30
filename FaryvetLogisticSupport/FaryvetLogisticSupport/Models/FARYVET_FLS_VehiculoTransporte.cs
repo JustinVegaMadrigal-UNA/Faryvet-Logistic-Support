@@ -21,6 +21,7 @@ namespace FaryvetLogisticSupport.Models
         public String Modelo { get; set; }
 
         [Required]
+        [Range(1960, 2100)]
         [Display(Name = "Año de fabrición")]
         public int AnnioFabricacion { get; set; }
 

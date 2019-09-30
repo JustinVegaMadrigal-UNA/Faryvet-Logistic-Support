@@ -64,7 +64,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input required pattern="[0-9]+" asp-for="FARYVET_FLS_VehiculoTransporte.AnnioFabricacion" class="form-control" />
+                        <input required pattern="[0-9]+" min="1960" max="2100" asp-for="FARYVET_FLS_VehiculoTransporte.AnnioFabricacion" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.AnnioFabricacion" class="text-danger">
                     </span>

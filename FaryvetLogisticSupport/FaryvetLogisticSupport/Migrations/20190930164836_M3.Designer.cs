@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FaryvetLogisticSupport.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190930053505_M3")]
+    [Migration("20190930164836_M3")]
     partial class M3
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
