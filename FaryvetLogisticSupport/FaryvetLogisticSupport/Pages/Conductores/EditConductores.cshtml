@@ -20,7 +20,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input disabled asp-for="FARYVET_FLS_Conductor.NumeroIdentificacion" class="form-control" />
+                        <input asp-for="FARYVET_FLS_Conductor.NumeroIdentificacion" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_Conductor.NumeroIdentificacion" class="text-danger">
                     </span>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input disabled asp-for="FARYVET_FLS_Conductor.FechaContratacion" class="form-control" />
+                        <input asp-for="FARYVET_FLS_Conductor.FechaContratacion" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_Conductor.FechaContratacion" class="text-danger">
                     </span>
@@ -95,7 +95,11 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_Conductor.Estado" class="form-control" />
+                        <select asp-for="FARYVET_FLS_Conductor.Estado" class="form-control">
+                            <option selected="selected">Disponible</option>
+                            <option>Incapacitado</option>
+                            <option>Vacaciones</option>
+                        </select>
                     </div>
                     <span asp-validation-for="FARYVET_FLS_Conductor.Estado" class="text-danger">
                     </span>
