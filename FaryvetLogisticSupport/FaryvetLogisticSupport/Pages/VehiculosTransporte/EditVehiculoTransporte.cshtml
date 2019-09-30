@@ -4,7 +4,7 @@
     ViewData["Title"] = "EditVehiculoTransporte";
 }
 
-<h1>EditVehiculoTransporte</h1>
+<h1>Editar Vehiculo de Transporte</h1>
 
 <div class="border">
     <form method="post">
@@ -19,7 +19,8 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_VehiculoTransporte.NumeroPlaca" class="form-control" />
+                        <input disabled asp-for="FARYVET_FLS_VehiculoTransporte.NumeroPlaca" class="form-control" />
+                        <input type="hidden" asp-for="FARYVET_FLS_VehiculoTransporte.NumeroPlaca" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.NumeroPlaca" class="text-danger">
                     </span>
@@ -202,23 +203,8 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <select asp-for="FARYVET_FLS_VehiculoTransporte.LicenciaRequerida" class="form-control">
-                            <option selected="selected">A1</option>
-                            <option>A2</option>
-                            <option>A3</option>
-                            <option>A4</option>
-                            <option>B1</option>
-                            <option>B2</option>
-                            <option>B3</option>
-                            <option>B4</option>
-                            <option>C1</option>
-                            <option>C2</option>
-                            <option>D1</option>
-                            <option>D2</option>
-                            <option>D3</option>
-                            <option>E1</option>
-                            <option>E2</option>
-                        </select>
+                        <input disabled asp-for="FARYVET_FLS_VehiculoTransporte.LicenciaRequerida" class="form-control"/>
+                        <input type="hidden" asp-for="FARYVET_FLS_VehiculoTransporte.LicenciaRequerida" class="form-control"/>
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.LicenciaRequerida" class="text-danger">
                     </span>

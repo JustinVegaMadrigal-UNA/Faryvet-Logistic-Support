@@ -4,7 +4,7 @@
     ViewData["Title"] = "EditConductores";
 }
 
-<h1>EditConductores</h1>
+<h1>Editar Conductores</h1>
 
 <div class="border">
     <form method="post">
@@ -20,7 +20,9 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_Conductor.NumeroIdentificacion" class="form-control" />
+                        <input disabled asp-for="FARYVET_FLS_Conductor.NumeroIdentificacion" class="form-control" />
+                        <input type="hidden" asp-for="FARYVET_FLS_Conductor.NumeroIdentificacion" class="form-control" />
+
                     </div>
                     <span asp-validation-for="FARYVET_FLS_Conductor.NumeroIdentificacion" class="text-danger">
                     </span>
@@ -80,7 +82,8 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_Conductor.FechaContratacion" class="form-control" />
+                        <input disabled asp-for="FARYVET_FLS_Conductor.FechaContratacion" class="form-control" />
+                        <input type="hidden" asp-for="FARYVET_FLS_Conductor.FechaContratacion" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_Conductor.FechaContratacion" class="text-danger">
                     </span>
