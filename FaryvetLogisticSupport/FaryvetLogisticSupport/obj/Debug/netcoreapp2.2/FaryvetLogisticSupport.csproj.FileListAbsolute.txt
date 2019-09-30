@@ -135,3 +135,6 @@ D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogi
 D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\FaryvetLogisticSupport.dll
 D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\FaryvetLogisticSupport.pdb
 D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\FaryvetLogisticSupport.csproj.CopyComplete
+C:\Users\Justin\Documents\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\VehiculosTransporte\CreateVehiculosTransporte.g.cshtml.cs
+C:\Users\Justin\Documents\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\VehiculosTransporte\IndexVehiculosTransporte.g.cshtml.cs
+C:\Users\Justin\Documents\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\Conductores\EditConductores.g.cshtml.cs
