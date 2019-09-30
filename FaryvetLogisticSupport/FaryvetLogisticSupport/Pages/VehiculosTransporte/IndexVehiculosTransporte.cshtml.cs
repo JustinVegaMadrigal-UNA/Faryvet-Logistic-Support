@@ -24,5 +24,18 @@ namespace FaryvetLogisticSupport.Pages.VehiculosTransporte
         {
             FARYVET_FLS_VehiculoTransporte = await _dbContext.FARYVET_FLS_VehiculoTransporte.ToListAsync();
         }
+
+        public async Task<ActionResult> OnPostDelete(string NumeroPlaca)
+        {
+            var VehiculoDB = await _dbContext.FARYVET_FLS_VehiculoTransporte.FindAsync(NumeroPlaca);
+            if (VehiculoDB == null)
+            {
+                return NotFound();
+            }
+
+            _dbContext.FARYVET_FLS_VehiculoTransporte.Remove(VehiculoDB);
+            await _dbContext.SaveChangesAsync();
+            return RedirectToPage("IndexVehiculosTransporte");
+        }
     }
 }

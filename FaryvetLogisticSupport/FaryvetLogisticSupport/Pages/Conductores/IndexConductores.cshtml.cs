@@ -24,5 +24,18 @@ namespace FaryvetLogisticSupport.Pages.Conductores
         {
             FARYVET_FLS_Conductores = await _dbContext.FARYVET_FLS_Conductor.ToListAsync ( ) ;
         }
+
+        public async Task<ActionResult> OnPostDelete(string NumeroIdentificacion)
+        {
+            var ConductorDB = await _dbContext.FARYVET_FLS_Conductor.FindAsync(NumeroIdentificacion);
+            if(ConductorDB == null)
+            {
+                return NotFound();
+            }
+
+            _dbContext.FARYVET_FLS_Conductor.Remove(ConductorDB);
+            await _dbContext.SaveChangesAsync();
+            return RedirectToPage("IndexConductores");
+        }
     }
 }

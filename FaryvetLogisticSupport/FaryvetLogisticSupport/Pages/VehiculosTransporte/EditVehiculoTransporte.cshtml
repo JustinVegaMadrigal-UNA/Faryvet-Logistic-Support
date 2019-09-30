@@ -1,0 +1,243 @@
+﻿@page
+@model FaryvetLogisticSupport.Pages.VehiculosTransporte.EditVehiculoTransporteModel
+@{
+    ViewData["Title"] = "EditVehiculoTransporte";
+}
+
+<h1>EditVehiculoTransporte</h1>
+
+<div class="border">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="container">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <label asp-for="FARYVET_FLS_VehiculoTransporte.NumeroPlaca">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <input asp-for="FARYVET_FLS_VehiculoTransporte.NumeroPlaca" class="form-control" />
+                    </div>
+                    <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.NumeroPlaca" class="text-danger">
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <label asp-for="FARYVET_FLS_VehiculoTransporte.Marca">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <input asp-for="FARYVET_FLS_VehiculoTransporte.Marca" class="form-control" />
+                    </div>
+                    <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.Marca" class="text-danger">
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <label asp-for="FARYVET_FLS_VehiculoTransporte.Modelo">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <input asp-for="FARYVET_FLS_VehiculoTransporte.Modelo" class="form-control" />
+                    </div>
+                    <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.Modelo" class="text-danger">
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <label asp-for="FARYVET_FLS_VehiculoTransporte.AnnioFabricacion">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <input asp-for="FARYVET_FLS_VehiculoTransporte.AnnioFabricacion" class="form-control" />
+                    </div>
+                    <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.AnnioFabricacion" class="text-danger">
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <label asp-for="FARYVET_FLS_VehiculoTransporte.CapacidadCarga">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <input asp-for="FARYVET_FLS_VehiculoTransporte.CapacidadCarga" class="form-control" />
+                    </div>
+                    <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.CapacidadCarga" class="text-danger">
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <label asp-for="FARYVET_FLS_VehiculoTransporte.CapacidadCombustible">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <input asp-for="FARYVET_FLS_VehiculoTransporte.CapacidadCombustible" class="form-control" />
+                    </div>
+                    <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.CapacidadCombustible" class="text-danger">
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <label asp-for="FARYVET_FLS_VehiculoTransporte.FechaRiteve">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="date" asp-for="FARYVET_FLS_VehiculoTransporte.FechaRiteve" class="form-control" />
+                    </div>
+                    <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.FechaRiteve" class="text-danger">
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <label asp-for="FARYVET_FLS_VehiculoTransporte.CostoMarchamo">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <input asp-for="FARYVET_FLS_VehiculoTransporte.CostoMarchamo" class="form-control" />
+                    </div>
+                    <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.CostoMarchamo" class="text-danger">
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <label asp-for="FARYVET_FLS_VehiculoTransporte.CVOSenasa">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <input asp-for="FARYVET_FLS_VehiculoTransporte.CVOSenasa" class="form-control" />
+                    </div>
+                    <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.CVOSenasa" class="text-danger">
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <label asp-for="FARYVET_FLS_VehiculoTransporte.Estado">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <select asp-for="FARYVET_FLS_VehiculoTransporte.Estado" class="form-control">
+                            <option selected="selected">Disponible</option>
+                            <option>En mantenimiento</option>
+                        </select>
+                    </div>
+                    <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.Estado" class="text-danger">
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <label asp-for="FARYVET_FLS_VehiculoTransporte.IsEntrega">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <input asp-for="FARYVET_FLS_VehiculoTransporte.IsEntrega" class="form-control" />
+                    </div>
+                    <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.IsEntrega" class="text-danger">
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <label asp-for="FARYVET_FLS_VehiculoTransporte.Comentario">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <input asp-for="FARYVET_FLS_VehiculoTransporte.Comentario" class="form-control" />
+                    </div>
+                    <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.Comentario" class="text-danger">
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <label asp-for="FARYVET_FLS_VehiculoTransporte.LicenciaRequerida">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <select asp-for="FARYVET_FLS_VehiculoTransporte.LicenciaRequerida" class="form-control">
+                            <option selected="selected">A1</option>
+                            <option>A2</option>
+                            <option>A3</option>
+                            <option>A4</option>
+                            <option>B1</option>
+                            <option>B2</option>
+                            <option>B3</option>
+                            <option>B4</option>
+                            <option>C1</option>
+                            <option>C2</option>
+                            <option>D1</option>
+                            <option>D2</option>
+                            <option>D3</option>
+                            <option>E1</option>
+                            <option>E2</option>
+                        </select>
+                    </div>
+                    <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.LicenciaRequerida" class="text-danger">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-2">
+                        <input type="submit" value="Guardar" class="btn btn-primary form-control" />
+                    </div>
+                    <div class="col-2">
+                        <a asp-page="IndexVehiculosTransporte" class="btn btn-success form-control">
+                            Cancelar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

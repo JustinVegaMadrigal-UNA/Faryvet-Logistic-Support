@@ -140,3 +140,4 @@ C:\Users\Justin\Documents\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport
 C:\Users\mauri\Documents\GitHub\Faryvet-Logistic-Support\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\Conductores\EditConductores.cshtml.g.cs
 C:\Users\mauri\Documents\GitHub\Faryvet-Logistic-Support\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\VehiculosTransporte\CreateVehiculosTransporte.cshtml.g.cs
 C:\Users\mauri\Documents\GitHub\Faryvet-Logistic-Support\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\VehiculosTransporte\IndexVehiculosTransporte.cshtml.g.cs
+C:\Users\mauri\Documents\GitHub\Faryvet-Logistic-Support\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\VehiculosTransporte\EditVehiculoTransporte.cshtml.g.cs

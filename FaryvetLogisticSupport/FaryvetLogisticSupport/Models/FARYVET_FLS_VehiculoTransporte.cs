@@ -34,7 +34,8 @@ namespace FaryvetLogisticSupport.Models
 
         [Required]
         [Display(Name = "Fecha de RITEVE")]
-        public String FechaRiteve { get; set; }
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MM-yyyy}")]
+        public DateTime FechaRiteve { get; set; }
 
         [Required]
         [Display(Name = "Costo del marchamo")]
@@ -52,7 +53,9 @@ namespace FaryvetLogisticSupport.Models
         public bool IsEntrega { get; set; }
 
         [Display(Name = "Comentarios")]
-        public String Comentario { get; set; }
+        [Required(AllowEmptyStrings = true)]
+        [DisplayFormat(ConvertEmptyStringToNull = false)]
+        public string Comentario { get; set; }
 
         [Required]
         [Display(Name = "Licencia requerida")]

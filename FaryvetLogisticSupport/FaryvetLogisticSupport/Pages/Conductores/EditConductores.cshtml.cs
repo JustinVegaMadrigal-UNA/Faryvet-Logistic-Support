@@ -22,7 +22,6 @@ namespace FaryvetLogisticSupport.Pages.Conductores
 
         public async Task OnGet(String NumeroIdentificacion)
         {
-            Console.WriteLine(NumeroIdentificacion);
             FARYVET_FLS_Conductor = await _dbContext.FARYVET_FLS_Conductor.FindAsync(NumeroIdentificacion) ;
         }
 
