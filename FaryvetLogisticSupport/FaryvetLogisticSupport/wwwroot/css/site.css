@@ -6,11 +6,11 @@ a.navbar-brand {
   text-align: center;
   word-break: break-all;
 }
-
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 14px;
 }
 @media (min-width: 768px) {
   html {
