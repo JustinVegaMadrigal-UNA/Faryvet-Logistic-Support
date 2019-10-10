@@ -9,68 +9,72 @@
     @if (Model.FARYVET_FLS_Conductores.Count() > 0)
     {
         <br />
-        <table class="table table-striped border">
-            <tr class="table-secondary">
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_Conductores.FirstOrDefault().NumeroIdentificacion)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_Conductores.FirstOrDefault().Nombre)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_Conductores.FirstOrDefault().PrimerApellido)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_Conductores.FirstOrDefault().SegundoApellido)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_Conductores.FirstOrDefault().FechaContratacion)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_Conductores.FirstOrDefault().Estado)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_Conductores.FirstOrDefault().IsEntrega)
-                </th>
-                <th>
-                    Acciones
-                </th>
-            </tr>
-            @foreach (var item in Model.FARYVET_FLS_Conductores)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(m => item.NumeroIdentificacion)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.Nombre)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.PrimerApellido)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.SegundoApellido)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.FechaContratacion)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.Estado)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.IsEntrega)
-                    </td>
-                    <td>
-                        <a asp-route-NumeroIdentificacion="@item.NumeroIdentificacion" asp-page="EditConductores" class="btn btn-success btn-sm">
-                            Editar
-                        </a>
-                        <button asp-page-handler="Delete" asp-route-NumeroIdentificacion="@item.NumeroIdentificacion"
-                                class="btn btn-danger btn-sm">
-                            Eliminar
-                        </button>
-                    </td>
+        <table id="tabla" class="table table-striped border">
+            <thead>
+                <tr class="table-secondary">
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_Conductores.FirstOrDefault().NumeroIdentificacion)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_Conductores.FirstOrDefault().Nombre)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_Conductores.FirstOrDefault().PrimerApellido)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_Conductores.FirstOrDefault().SegundoApellido)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_Conductores.FirstOrDefault().FechaContratacion)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_Conductores.FirstOrDefault().Estado)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_Conductores.FirstOrDefault().IsEntrega)
+                    </th>
+                    <th>
+                        Acciones
+                    </th>
                 </tr>
-            }
+            </thead>
+            <tbody>
+                @foreach (var item in Model.FARYVET_FLS_Conductores)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(m => item.NumeroIdentificacion)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.Nombre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.PrimerApellido)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.SegundoApellido)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.FechaContratacion)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.Estado)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.IsEntrega)
+                        </td>
+                        <td>
+                            <a asp-route-NumeroIdentificacion="@item.NumeroIdentificacion" asp-page="EditConductores" class="btn btn-success btn-sm">
+                                Editar
+                            </a>
+                            <button asp-page-handler="Delete" asp-route-NumeroIdentificacion="@item.NumeroIdentificacion"
+                                    class="btn btn-danger btn-sm">
+                                Eliminar
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>          
         </table>
     }
     else
@@ -78,3 +82,32 @@
         <p>No se encuentran datos disponibles</p>
     }
 </form>
+
+<link href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+@section scripts{
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        $("#tabla").datatable().fnDestroy();
+        $("#tabla").dataTable({
+            "responsive":true,
+            "ajax": {
+                "url": "/Pages/VehiculosTransporte/IndexConductores/GetList",
+                "type": "GET",
+                "datatype": "json"
+            },
+            "columns": [
+                { "data": "NumeroIdentificacion" },
+                { "data": "Nombre" },
+                { "data": "Modelo" },
+                { "data": "PrimerApellido" },
+                { "data": "SegundoApellido" },
+                { "data": "FechaContratacion" },
+                { "data": "IsEntrega" },
+                { "data": "Acciones" }
+            ],
+
+        });
+    });
+    </script>
+}

@@ -3,110 +3,114 @@
 @{
     ViewData["Title"] = "IndexVehiculosTransporte";
 }
-
 <h1>Vehiculos de Transporte</h1>
 <form method="post">
     @if (Model.FARYVET_FLS_VehiculoTransporte.Count() > 0)
     {
         <br />
-        <table class="table table-striped border">
-            <tr class="table-secondary">
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().NumeroPlaca)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().Marca)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().Modelo)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().AnnioFabricacion)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().CapacidadCarga)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().CapacidadCombustible)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().FechaRiteve)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().CostoMarchamo)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().CVOSenasa)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().Estado)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().IsEntrega)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().Comentario)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().LicenciaRequerida)
-                </th>
-                <th>
-                    Acciones
-                </th>
-            </tr>
-            @foreach (var item in Model.FARYVET_FLS_VehiculoTransporte)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(m => item.NumeroPlaca)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.Marca)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.Modelo)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.AnnioFabricacion)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.CapacidadCarga)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.CapacidadCombustible)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.FechaRiteve)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.CostoMarchamo)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.CVOSenasa)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.Estado)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.IsEntrega)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.Comentario)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(m => item.LicenciaRequerida)
-                    </td>
-                    <td>
-                        <a asp-route-NumeroPlaca="@item.NumeroPlaca" asp-page="EditVehiculoTransporte" class="btn btn-success btn-sm">
-                            Editar
-                        </a>
-                        <button asp-page-handler="Delete" asp-route-NumeroPlaca="@item.NumeroPlaca"
-                                class="btn btn-danger btn-sm">
-                            Eliminar
-                        </button>
-                    </td>
+        <table id="tabla" class="table table-striped border" cellspacing="0">
+            <thead>
+                <tr class="table-secondary">
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().NumeroPlaca)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().Marca)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().Modelo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().AnnioFabricacion)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().CapacidadCarga)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().CapacidadCombustible)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().FechaRiteve)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().CostoMarchamo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().CVOSenasa)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().Estado)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().IsEntrega)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().Comentario)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.FARYVET_FLS_VehiculoTransporte.FirstOrDefault().LicenciaRequerida)
+                    </th>
+                    <th>
+                        Acciones
+                    </th>
                 </tr>
-            }
+            </thead>
+            <tbody>
+                @foreach (var item in Model.FARYVET_FLS_VehiculoTransporte)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(m => item.NumeroPlaca)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.Marca)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.Modelo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.AnnioFabricacion)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.CapacidadCarga)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.CapacidadCombustible)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.FechaRiteve)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.CostoMarchamo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.CVOSenasa)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.Estado)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.IsEntrega)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.Comentario)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.LicenciaRequerida)
+                        </td>
+                        <td>
+                            <a asp-route-NumeroPlaca="@item.NumeroPlaca" asp-page="EditVehiculoTransporte" class="btn btn-success btn-sm">
+                                Editar
+                            </a>
+                            <button asp-page-handler="Delete" asp-route-NumeroPlaca="@item.NumeroPlaca"
+                                    class="btn btn-danger btn-sm">
+                                Eliminar
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+          
         </table>
     }
     else
@@ -114,3 +118,38 @@
         <p>No se encuentran datos disponibles</p>
     }
 </form>
+
+<link href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet"/>
+@section scripts{ 
+<script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#tabla").datatable().fnDestroy();
+        $("#tabla").dataTable({ 
+            "responsive":true,
+            "ajax": {
+                "url": "/Pages/VehiculosTransporte/IndexVehiculosTransporte/GetList",
+                "type": "GET",
+                "datatype": "json"
+            },
+            "columns": [
+                { "data": "NumeroPlaca" },
+                { "data": "Marca" },
+                { "data": "Modelo" },
+                { "data": "AnnioFabricacion" },
+                { "data": "CapacidadCarga" },
+                { "data": "CapacidadCombustible" },
+                { "data": "FechaRiteve" },
+                { "data": "CostoMarchamo" },
+                { "data": "CVOSenasa" },
+                { "data": "Estado" },
+                { "data": "IsEntrega" },
+                { "data": "Comentario" },
+                { "data": "LicenciaRequerida" },
+                { "data": "Acciones" }
+            ],
+
+        });
+    });
+</script>
+}

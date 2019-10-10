@@ -37,5 +37,10 @@ namespace FaryvetLogisticSupport.Pages.Conductores
             await _dbContext.SaveChangesAsync();
             return RedirectToPage("IndexConductores");
         }
+        public ActionResult GetList()
+        {
+            var conductores = _dbContext.FARYVET_FLS_Conductor.ToList();
+            return new JsonResult(conductores);
+        }
     }
 }

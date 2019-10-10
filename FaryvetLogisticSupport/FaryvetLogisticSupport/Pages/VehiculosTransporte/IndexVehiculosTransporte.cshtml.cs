@@ -37,5 +37,11 @@ namespace FaryvetLogisticSupport.Pages.VehiculosTransporte
             await _dbContext.SaveChangesAsync();
             return RedirectToPage("IndexVehiculosTransporte");
         }
+
+        public ActionResult GetList()
+        {
+            var vehiculos = _dbContext.FARYVET_FLS_VehiculoTransporte.ToList();
+            return new JsonResult(vehiculos);
+        }
     }
 }
