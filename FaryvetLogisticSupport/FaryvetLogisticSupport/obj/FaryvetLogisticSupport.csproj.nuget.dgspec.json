@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Documentos\\GitHub\\Faryvet-Logistic-Support\\Faryvet-Logistic-Support\\FaryvetLogisticSupport\\FaryvetLogisticSupport\\FaryvetLogisticSupport.csproj": {}
+    "C:\\Users\\Justin\\Documents\\GitHub\\Faryvet-Logistic-Support\\FaryvetLogisticSupport\\FaryvetLogisticSupport\\FaryvetLogisticSupport.csproj": {}
   },
   "projects": {
-    "E:\\Documentos\\GitHub\\Faryvet-Logistic-Support\\Faryvet-Logistic-Support\\FaryvetLogisticSupport\\FaryvetLogisticSupport\\FaryvetLogisticSupport.csproj": {
+    "C:\\Users\\Justin\\Documents\\GitHub\\Faryvet-Logistic-Support\\FaryvetLogisticSupport\\FaryvetLogisticSupport\\FaryvetLogisticSupport.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Documentos\\GitHub\\Faryvet-Logistic-Support\\Faryvet-Logistic-Support\\FaryvetLogisticSupport\\FaryvetLogisticSupport\\FaryvetLogisticSupport.csproj",
+        "projectUniqueName": "C:\\Users\\Justin\\Documents\\GitHub\\Faryvet-Logistic-Support\\FaryvetLogisticSupport\\FaryvetLogisticSupport\\FaryvetLogisticSupport.csproj",
         "projectName": "FaryvetLogisticSupport",
-        "projectPath": "E:\\Documentos\\GitHub\\Faryvet-Logistic-Support\\Faryvet-Logistic-Support\\FaryvetLogisticSupport\\FaryvetLogisticSupport\\FaryvetLogisticSupport.csproj",
-        "packagesPath": "C:\\Users\\soto2\\.nuget\\packages\\",
-        "outputPath": "E:\\Documentos\\GitHub\\Faryvet-Logistic-Support\\Faryvet-Logistic-Support\\FaryvetLogisticSupport\\FaryvetLogisticSupport\\obj\\",
+        "projectPath": "C:\\Users\\Justin\\Documents\\GitHub\\Faryvet-Logistic-Support\\FaryvetLogisticSupport\\FaryvetLogisticSupport\\FaryvetLogisticSupport.csproj",
+        "packagesPath": "C:\\Users\\Justin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Justin\\Documents\\GitHub\\Faryvet-Logistic-Support\\FaryvetLogisticSupport\\FaryvetLogisticSupport\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\soto2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Justin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -51,6 +51,16 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.6, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",

@@ -15,7 +15,7 @@
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-        "Documentation": null,
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;a&gt; elements.\n            </summary>\n        ",
         "TagOutputHint": null,
         "CaseSensitive": false,
         "TagMatchingRules": [
@@ -2961,13 +2961,28 @@
   "RootNamespace": "FaryvetLogisticSupport",
   "Documents": [
     {
+      "FilePath": "Pages\\Conductores\\EditConductores.cshtml",
+      "TargetPath": "Pages\\Conductores\\EditConductores.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Pages\\Index.cshtml",
       "TargetPath": "Pages\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Pages\\VehiculosTransporte\\IndexVehiculosTransporte.cshtml",
+      "TargetPath": "Pages\\VehiculosTransporte\\IndexVehiculosTransporte.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Pages\\Privacy.cshtml",
       "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages\\VehiculosTransporte\\EditVehiculoTransporte.cshtml",
+      "TargetPath": "Pages\\VehiculosTransporte\\EditVehiculoTransporte.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2988,6 +3003,11 @@
     {
       "FilePath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages\\VehiculosTransporte\\CreateVehiculosTransporte.cshtml",
+      "TargetPath": "Pages\\VehiculosTransporte\\CreateVehiculosTransporte.cshtml",
       "FileKind": "mvc"
     },
     {

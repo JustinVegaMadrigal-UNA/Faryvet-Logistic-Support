@@ -13,6 +13,13 @@ namespace FaryvetLogisticSupport.Models
 
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.HasDefaultSchema("FARYVET");
+        }
+
+        // Las siguientes clases forman parte de las migraciones.
+
         public DbSet <FARYVET_FLS_Conductor> FARYVET_FLS_Conductor { get; set; }
 
         public DbSet<FARYVET_FLS_VehiculoTransporte> FARYVET_FLS_VehiculoTransporte { get; set; }
