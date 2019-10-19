@@ -23,5 +23,7 @@ namespace FaryvetLogisticSupport.Models
         public DbSet <FARYVET_FLS_Conductor> FARYVET_FLS_Conductor { get; set; }
 
         public DbSet<FARYVET_FLS_VehiculoTransporte> FARYVET_FLS_VehiculoTransporte { get; set; }
+
+        public DbSet<Factura> FLS_Facturas { get; set; }
     }
 }

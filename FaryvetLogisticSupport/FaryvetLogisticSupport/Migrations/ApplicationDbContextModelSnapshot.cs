@@ -85,6 +85,42 @@ namespace FaryvetLogisticSupport.Migrations
 
                     b.ToTable("FARYVET_FLS_VehiculoTransporte");
                 });
+
+            modelBuilder.Entity("FaryvetLogisticSupport.Models.Factura", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Canton")
+                        .IsRequired();
+
+                    b.Property<string>("Cliente")
+                        .IsRequired();
+
+                    b.Property<string>("Comentarios")
+                        .IsRequired();
+
+                    b.Property<string>("Distrito")
+                        .IsRequired();
+
+                    b.Property<string>("FormaCobro")
+                        .IsRequired();
+
+                    b.Property<string>("FormaDespacho")
+                        .IsRequired();
+
+                    b.Property<string>("Moneda")
+                        .IsRequired();
+
+                    b.Property<float>("Peso");
+
+                    b.Property<string>("Provincia")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.ToTable("FLS_Facturas");
+                });
 #pragma warning restore 612, 618
         }
     }

@@ -24,6 +24,8 @@
     <Compile Remove="Migrations\20190930050935_M3.Designer.cs" />
     <Compile Remove="Migrations\20190930053505_M3.cs" />
     <Compile Remove="Migrations\20190930053505_M3.Designer.cs" />
+    <Compile Remove="Migrations\20191019202606_M1.cs" />
+    <Compile Remove="Migrations\20191019202606_M1.Designer.cs" />
   </ItemGroup>
 
 
@@ -35,12 +37,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
-  </ItemGroup>
-
-
-  <ItemGroup>
-    <Folder Include="Migrations\" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
   </ItemGroup>
 
 </Project>
