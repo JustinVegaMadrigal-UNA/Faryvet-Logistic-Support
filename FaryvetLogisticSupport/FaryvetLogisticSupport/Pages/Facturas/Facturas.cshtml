@@ -9,71 +9,70 @@
 <form method="post">
     @if (Model.Facturas.Count() > 0)
     {
-        <br />
-        <table id="tabla" class="table table-striped border" cellspacing="0">
-            <thead>
-                <tr class="table-secondary">
-                    <th>
-                        @Html.DisplayNameFor(m => m.Facturas.FirstOrDefault().Id)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(m => m.Facturas.FirstOrDefault().FormaDespacho)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(m => m.Facturas.FirstOrDefault().Peso)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(m => m.Facturas.FirstOrDefault().FormaCobro)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(m => m.Facturas.FirstOrDefault().Moneda)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(m => m.Facturas.FirstOrDefault().Cliente)
-                    </th>
-                    <th>
-                        Ubicación
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(m => m.Facturas.FirstOrDefault().Comentarios)
-                    </th>
+     <table id="tabla" class="table table-striped display nowrap" cellspacing="0" width="100%" style="margin-bottom: 0">
+        <thead>
+            <tr class="table-secondary">
+                <th>
+                    @Html.DisplayNameFor(m => m.Facturas.FirstOrDefault().Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Facturas.FirstOrDefault().FormaDespacho)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Facturas.FirstOrDefault().Peso)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Facturas.FirstOrDefault().FormaCobro)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Facturas.FirstOrDefault().Moneda)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Facturas.FirstOrDefault().Cliente)
+                </th>
+                <th>
+                    Ubicación
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Facturas.FirstOrDefault().Comentarios)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Facturas)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(m => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.FormaDespacho)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.Peso)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.FormaCobro)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.Moneda)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.Cliente)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.Provincia)
+                        @Html.DisplayFor(m => item.Canton)
+                        @Html.DisplayFor(m => item.Distrito)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.Comentarios)
+                    </td>
                 </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model.Facturas)
-                {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(m => item.Id)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(m => item.FormaDespacho)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(m => item.Peso)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(m => item.FormaCobro)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(m => item.Moneda)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(m => item.Cliente)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(m => item.Provincia)
-                            @Html.DisplayFor(m => item.Canton)
-                            @Html.DisplayFor(m => item.Distrito)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(m => item.Comentarios)
-                        </td>
-                    </tr>
-                }
-            </tbody>
+            }
+        </tbody>
 
-        </table>
+    </table>
     }
     else
     {
@@ -85,29 +84,31 @@
 @section scripts{
     <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
     <script>
-    $(document).ready(function () {
-        $("#tabla").datatable().fnDestroy();
-        $("#tabla").dataTable({
-            "responsive":true,
-            "ajax": {
-                "url": "/Pages/Facturas/FacturasEspeciales/GetList",
-                "type": "GET",
-                "datatype": "json"
-            },
-            "columns": [
-                { "data": "Id" },
-                { "data": "FormaDespacho" },
-                { "data": "Peso" },
-                { "data": "FormaCobro" },
-                { "data": "Moneda" },
-                { "data": "Cliente" },
-                { "data": "Provincia" },
-                { "data": "Canton" },
-                { "data": "Distrito" },
-                { "data": "Comentarios" }
-            ],
+        $(document).ready(function () {
+            $("#tabla").datatable().fnDestroy();
+            $("#tabla").dataTable({
+                "scrollX": true,
+                "scrollY": 200,
+                "ajax": {
+                    "url": "/Pages/Facturas/FacturasEspeciales/GetList",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+                "columns": [
+                    { "data": "Id" },
+                    { "data": "FormaDespacho" },
+                    { "data": "Peso" },
+                    { "data": "FormaCobro" },
+                    { "data": "Moneda" },
+                    { "data": "Cliente" },
+                    { "data": "Provincia" },
+                    { "data": "Canton" },
+                    { "data": "Distrito" },
+                    { "data": "Comentarios" }
+                ],
 
+            }); 
+            $('.dataTables_length').addClass('bs-select');
         });
-    });
     </script>
 }

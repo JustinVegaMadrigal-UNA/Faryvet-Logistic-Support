@@ -5,15 +5,17 @@
 }
 
 <h1>Conductores</h1>
-<a asp-page="CreateConductores" class="btn btn-primary btn-sm">
-    Agregar
-</a>
+
+<div class="col-2">
+    <a asp-page="CreateConductores" class="btn btn-primary form-control" data-toggle="tooltip" title="Agregar un nuevo conductor">
+        Nuevo
+    </a><p></p>
+</div>
 
 <form method="post">
     @if (Model.FARYVET_FLS_Conductores.Count() > 0)
     {
-        <br />
-        <table id="tabla" class="table table-striped border">
+        <table id="tabla" class="table table-responsive table-striped display nowrap" cellspacing="0" width="100%" style="margin-bottom: 0">
             <thead>
                 <tr class="table-secondary">
                     <th>
@@ -37,7 +39,7 @@
                     <th>
                         @Html.DisplayNameFor(m => m.FARYVET_FLS_Conductores.FirstOrDefault().IsEntrega)
                     </th>
-                    <th>
+                    <th colspan="2">
                         Acciones
                     </th>
                 </tr>
@@ -68,17 +70,19 @@
                             @Html.DisplayFor(m => item.IsEntrega)
                         </td>
                         <td>
-                            <a asp-route-NumeroIdentificacion="@item.NumeroIdentificacion" asp-page="EditConductores" class="btn btn-success btn-sm">
+                            <a asp-route-NumeroIdentificacion="@item.NumeroIdentificacion" asp-page="EditConductores" class="btn btn-success form-control" data-toggle="tooltip" title="Editar conductor">
                                 Editar
                             </a>
+                        </td>
+                        <td>
                             <button asp-page-handler="Delete" asp-route-NumeroIdentificacion="@item.NumeroIdentificacion"
-                                    class="btn btn-danger btn-sm">
+                                    class="btn btn-danger form-control" data-toggle="tooltip" title="Eliminar conductor">
                                 Eliminar
                             </button>
                         </td>
                     </tr>
                 }
-            </tbody>          
+            </tbody>
         </table>
     }
     else
@@ -91,27 +95,30 @@
 @section scripts{
     <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
     <script>
-    $(document).ready(function () {
-        $("#tabla").datatable().fnDestroy();
-        $("#tabla").dataTable({
-            "responsive":true,
-            "ajax": {
-                "url": "/Pages/VehiculosTransporte/IndexConductores/GetList",
-                "type": "GET",
-                "datatype": "json"
-            },
-            "columns": [
-                { "data": "NumeroIdentificacion" },
-                { "data": "Nombre" },
-                { "data": "Modelo" },
-                { "data": "PrimerApellido" },
-                { "data": "SegundoApellido" },
-                { "data": "FechaContratacion" },
-                { "data": "IsEntrega" },
-                { "data": "Acciones" }
-            ],
+        $(document).ready(function () {
+            $("#tabla").datatable().fnDestroy();
+            $("#tabla").dataTable({
+                "scrollX": true,
+                "scrollY": 200,
+                "ajax": {
+                    "url": "/Pages/VehiculosTransporte/IndexConductores/GetList",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+                "columns": [
+                    { "data": "NumeroIdentificacion" },
+                    { "data": "Nombre" },
+                    { "data": "Modelo" },
+                    { "data": "PrimerApellido" },
+                    { "data": "SegundoApellido" },
+                    { "data": "FechaContratacion" },
+                    { "data": "IsEntrega" },
+                    { "data": "Acciones" }
+                ],
 
+            });
+            $('.dataTables_length').addClass('bs-select');
         });
-    });
     </script>
+
 }
