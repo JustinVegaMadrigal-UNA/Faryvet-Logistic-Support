@@ -216,3 +216,5 @@ C:\Users\mauri\OneDrive\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogist
 C:\Users\mauri\OneDrive\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\FaryvetLogisticSupport.dll
 C:\Users\mauri\OneDrive\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\FaryvetLogisticSupport.pdb
 C:\Users\mauri\OneDrive\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\FaryvetLogisticSupport.csproj.CopyComplete
+E:\Documentos\GitHub\Faryvet-Logistic-Support\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\Facturas\FacturasEspeciales.g.cshtml.cs
+E:\Documentos\GitHub\Faryvet-Logistic-Support\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\Facturas\Facturas.g.cshtml.cs

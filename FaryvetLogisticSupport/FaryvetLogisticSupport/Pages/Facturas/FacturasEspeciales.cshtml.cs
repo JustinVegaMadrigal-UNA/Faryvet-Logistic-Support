@@ -22,7 +22,7 @@ namespace FaryvetLogisticSupport.Pages.Facturas
 
         public async Task OnGet()
         {
-            Facturas = await _dbContext.FLS_Facturas.ToListAsync();
+            Facturas = await _dbContext.FLS_Facturas.Where(F => F.FormaDespacho != "CAMION").ToListAsync();
         }
 
         public async Task<ActionResult> OnPostDelete(string id)

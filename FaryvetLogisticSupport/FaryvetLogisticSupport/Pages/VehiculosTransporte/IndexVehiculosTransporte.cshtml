@@ -4,6 +4,11 @@
     ViewData["Title"] = "IndexVehiculosTransporte";
 }
 <h1>Vehiculos de Transporte</h1>
+
+<a asp-page="CreateVehiculosTransporte" class="btn btn-primary btn-sm">
+    Agregar
+</a>
+
 <form method="post">
     @if (Model.FARYVET_FLS_VehiculoTransporte.Count() > 0)
     {
@@ -110,7 +115,7 @@
                     </tr>
                 }
             </tbody>
-          
+
         </table>
     }
     else
@@ -119,13 +124,13 @@
     }
 </form>
 
-<link href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet"/>
-@section scripts{ 
-<script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-<script>
+<link href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+@section scripts{
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script>
     $(document).ready(function () {
         $("#tabla").datatable().fnDestroy();
-        $("#tabla").dataTable({ 
+        $("#tabla").dataTable({
             "responsive":true,
             "ajax": {
                 "url": "/Pages/VehiculosTransporte/IndexVehiculosTransporte/GetList",
@@ -151,5 +156,5 @@
 
         });
     });
-</script>
+    </script>
 }
