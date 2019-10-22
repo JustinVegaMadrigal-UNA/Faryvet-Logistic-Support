@@ -20,7 +20,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_VehiculoTransporte.NumeroPlaca" class="form-control" />
+                        <input required pattern="[(A-Z)|(0-9)]+" asp-for="FARYVET_FLS_VehiculoTransporte.NumeroPlaca" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.NumeroPlaca" class="text-danger">
                     </span>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_VehiculoTransporte.Marca" class="form-control" />
+                        <input required pattern="\p{IsBasicLatin}+" asp-for="FARYVET_FLS_VehiculoTransporte.Marca" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.Marca" class="text-danger">
                     </span>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_VehiculoTransporte.Modelo" class="form-control" />
+                        <input required pattern="\p{IsBasicLatin}+" asp-for="FARYVET_FLS_VehiculoTransporte.Modelo" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.Modelo" class="text-danger">
                     </span>
@@ -125,14 +125,14 @@
             <div class="form-group">
                 <div class="row">
                     <div class="col-6">
-                        <label required pattern="[0-9]+[,]*[0-9]*" asp-for="FARYVET_FLS_VehiculoTransporte.CostoMarchamo">
+                        <label asp-for="FARYVET_FLS_VehiculoTransporte.CostoMarchamo">
                             Costo de marchamo<a style="color:red">*</a>
                         </label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_VehiculoTransporte.CostoMarchamo" class="form-control" />
+                        <input required pattern="[0-9]+[,]*[0-9]*" asp-for="FARYVET_FLS_VehiculoTransporte.CostoMarchamo" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.CostoMarchamo" class="text-danger">
                     </span>

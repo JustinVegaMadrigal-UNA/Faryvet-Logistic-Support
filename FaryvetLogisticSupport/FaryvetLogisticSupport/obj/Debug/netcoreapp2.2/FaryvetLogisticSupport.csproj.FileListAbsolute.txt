@@ -221,3 +221,5 @@ D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogi
 D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\Facturas\Facturas.cshtml.g.cs
 D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\Facturas\FacturasEspeciales.cshtml.g.cs
 D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\VehiculosTransporte\EditVehiculoTransporte.cshtml.g.cs
+C:\Users\mauri\OneDrive\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\Facturas\Facturas.cshtml.g.cs
+C:\Users\mauri\OneDrive\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\Facturas\FacturasEspeciales.cshtml.g.cs

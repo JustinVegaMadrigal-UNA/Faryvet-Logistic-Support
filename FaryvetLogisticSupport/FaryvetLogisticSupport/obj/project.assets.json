@@ -12945,19 +12945,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pc\\.nuget\\packages\\": {}
+    "C:\\Users\\mauri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documentos\\GitHub\\Faryvet-Logistic-Support\\FaryvetLogisticSupport\\FaryvetLogisticSupport\\FaryvetLogisticSupport.csproj",
+      "projectUniqueName": "C:\\Users\\mauri\\OneDrive\\Documentos\\GitHub\\Faryvet-Logistic-Support\\FaryvetLogisticSupport\\FaryvetLogisticSupport\\FaryvetLogisticSupport.csproj",
       "projectName": "FaryvetLogisticSupport",
-      "projectPath": "D:\\Documentos\\GitHub\\Faryvet-Logistic-Support\\FaryvetLogisticSupport\\FaryvetLogisticSupport\\FaryvetLogisticSupport.csproj",
-      "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
-      "outputPath": "D:\\Documentos\\GitHub\\Faryvet-Logistic-Support\\FaryvetLogisticSupport\\FaryvetLogisticSupport\\obj\\",
+      "projectPath": "C:\\Users\\mauri\\OneDrive\\Documentos\\GitHub\\Faryvet-Logistic-Support\\FaryvetLogisticSupport\\FaryvetLogisticSupport\\FaryvetLogisticSupport.csproj",
+      "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mauri\\OneDrive\\Documentos\\GitHub\\Faryvet-Logistic-Support\\FaryvetLogisticSupport\\FaryvetLogisticSupport\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

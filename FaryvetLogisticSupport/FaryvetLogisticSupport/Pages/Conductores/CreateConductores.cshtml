@@ -20,7 +20,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_Conductor.NumeroIdentificacion" class="form-control" />
+                        <input required pattern="\p{IsBasicLatin}+" asp-for="FARYVET_FLS_Conductor.NumeroIdentificacion" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_Conductor.NumeroIdentificacion" class="text-danger">
                     </span>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_Conductor.Nombre" class="form-control" />
+                        <input required pattern="\p{IsBasicLatin}+" asp-for="FARYVET_FLS_Conductor.Nombre" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_Conductor.Nombre" class="text-danger">
                     </span>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_Conductor.PrimerApellido" class="form-control" />
+                        <input required pattern="\p{IsBasicLatin}+" asp-for="FARYVET_FLS_Conductor.PrimerApellido" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_Conductor.PrimerApellido" class="text-danger">
                     </span>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input asp-for="FARYVET_FLS_Conductor.SegundoApellido" class="form-control" />
+                        <input required pattern="\p{IsBasicLatin}+" asp-for="FARYVET_FLS_Conductor.SegundoApellido" class="form-control" />
                     </div>
                     <span asp-validation-for="FARYVET_FLS_Conductor.SegundoApellido" class="text-danger">
                     </span>
