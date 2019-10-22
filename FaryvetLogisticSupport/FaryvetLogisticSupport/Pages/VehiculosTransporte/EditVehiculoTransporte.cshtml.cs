@@ -39,7 +39,6 @@ namespace FaryvetLogisticSupport.Pages.VehiculosTransporte
                 VehiculoDB.CostoMarchamo = FARYVET_FLS_VehiculoTransporte.CostoMarchamo;
                 VehiculoDB.CVOSenasa = FARYVET_FLS_VehiculoTransporte.CVOSenasa;
                 VehiculoDB.Estado = FARYVET_FLS_VehiculoTransporte.Estado;
-                VehiculoDB.IsEntrega = FARYVET_FLS_VehiculoTransporte.IsEntrega;
                 VehiculoDB.Comentario = FARYVET_FLS_VehiculoTransporte.Comentario;
                 VehiculoDB.LicenciaRequerida = FARYVET_FLS_VehiculoTransporte.LicenciaRequerida;
 

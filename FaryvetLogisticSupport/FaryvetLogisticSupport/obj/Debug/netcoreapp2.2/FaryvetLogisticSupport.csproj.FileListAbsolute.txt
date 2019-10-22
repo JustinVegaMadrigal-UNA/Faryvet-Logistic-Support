@@ -76,7 +76,6 @@ D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogi
 D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\bin\Debug\netcoreapp2.2\FaryvetLogisticSupport.pdb
 D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\bin\Debug\netcoreapp2.2\FaryvetLogisticSupport.Views.dll
 D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\bin\Debug\netcoreapp2.2\FaryvetLogisticSupport.Views.pdb
-D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\FaryvetLogisticSupport.csprojAssemblyReference.cache
 D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\FaryvetLogisticSupport.RazorAssemblyInfo.cache
 D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\FaryvetLogisticSupport.RazorAssemblyInfo.cs
 D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\FaryvetLogisticSupport.AssemblyInfoInputs.cache
@@ -218,3 +217,7 @@ C:\Users\mauri\OneDrive\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogist
 C:\Users\mauri\OneDrive\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\FaryvetLogisticSupport.csproj.CopyComplete
 E:\Documentos\GitHub\Faryvet-Logistic-Support\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\Facturas\FacturasEspeciales.g.cshtml.cs
 E:\Documentos\GitHub\Faryvet-Logistic-Support\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\Facturas\Facturas.g.cshtml.cs
+D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\Conductores\EditConductores.cshtml.g.cs
+D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\Facturas\Facturas.cshtml.g.cs
+D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\Facturas\FacturasEspeciales.cshtml.g.cs
+D:\Documentos\GitHub\Faryvet-Logistic-Support\FaryvetLogisticSupport\FaryvetLogisticSupport\obj\Debug\netcoreapp2.2\Razor\Pages\VehiculosTransporte\EditVehiculoTransporte.cshtml.g.cs

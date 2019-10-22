@@ -31,8 +31,6 @@ namespace FaryvetLogisticSupport.Models
         [Required]
         public String Estado { get; set; }
 
-        [Required]
-        [Display(Name = "¿Realizando entrega?")]
-        public bool IsEntrega { get; set; }
+        
     }
 }

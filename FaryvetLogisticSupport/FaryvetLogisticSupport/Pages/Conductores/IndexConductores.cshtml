@@ -35,10 +35,7 @@
                     </th>
                     <th>
                         @Html.DisplayNameFor(m => m.FARYVET_FLS_Conductores.FirstOrDefault().Estado)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(m => m.FARYVET_FLS_Conductores.FirstOrDefault().IsEntrega)
-                    </th>
+                    </th>                    
                     <th colspan="2">
                         Acciones
                     </th>
@@ -65,10 +62,7 @@
                         </td>
                         <td>
                             @Html.DisplayFor(m => item.Estado)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(m => item.IsEntrega)
-                        </td>
+                        </td>                        
                         <td>
                             <a asp-route-NumeroIdentificacion="@item.NumeroIdentificacion" asp-page="EditConductores" class="btn btn-success form-control" data-toggle="tooltip" title="Editar conductor">
                                 Editar
@@ -112,7 +106,6 @@
                     { "data": "PrimerApellido" },
                     { "data": "SegundoApellido" },
                     { "data": "FechaContratacion" },
-                    { "data": "IsEntrega" },
                     { "data": "Acciones" }
                 ],
 

@@ -19,7 +19,7 @@ namespace FaryvetLogisticSupport.Models
         public String FormaDespacho { get; set; }
 
         [Required]
-        [Display(Name = "Peso")]
+        [Display(Name = "Peso(Kg)")]
         public float Peso { get; set; }
 
         [Required]

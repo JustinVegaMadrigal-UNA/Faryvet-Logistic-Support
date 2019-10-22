@@ -156,28 +156,14 @@
                     <div class="col-6">
                         <select asp-for="FARYVET_FLS_VehiculoTransporte.Estado" class="form-control">
                             <option selected="selected">Disponible</option>
+                            <option>Realizando entrega</option>
                             <option>En mantenimiento</option>
                         </select>
                     </div>
                     <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.Estado" class="text-danger">
                     </span>
                 </div>
-            </div>
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-6">
-                        <label asp-for="FARYVET_FLS_VehiculoTransporte.IsEntrega">
-                        </label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <input asp-for="FARYVET_FLS_VehiculoTransporte.IsEntrega" class="form-control" />
-                    </div>
-                    <span asp-validation-for="FARYVET_FLS_VehiculoTransporte.IsEntrega" class="text-danger">
-                    </span>
-                </div>
-            </div>
+            </div>            
             <div class="form-group">
                 <div class="row">
                     <div class="col-6">

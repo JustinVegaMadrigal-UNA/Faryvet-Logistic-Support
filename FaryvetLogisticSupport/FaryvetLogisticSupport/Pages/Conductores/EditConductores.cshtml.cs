@@ -35,7 +35,7 @@ namespace FaryvetLogisticSupport.Pages.Conductores
                 ConductorDB.SegundoApellido = FARYVET_FLS_Conductor.SegundoApellido;
                 ConductorDB.FechaContratacion = FARYVET_FLS_Conductor.FechaContratacion;
                 ConductorDB.Estado = FARYVET_FLS_Conductor.Estado;
-                ConductorDB.IsEntrega = FARYVET_FLS_Conductor.IsEntrega;
+
 
                 await _dbContext.SaveChangesAsync();
                 return RedirectToPage("../Index");

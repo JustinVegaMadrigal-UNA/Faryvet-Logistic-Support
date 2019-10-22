@@ -31,8 +31,6 @@ namespace FaryvetLogisticSupport.Migrations
                     b.Property<string>("FechaContratacion")
                         .IsRequired();
 
-                    b.Property<bool>("IsEntrega");
-
                     b.Property<string>("Nombre")
                         .IsRequired();
 
@@ -69,8 +67,6 @@ namespace FaryvetLogisticSupport.Migrations
                         .IsRequired();
 
                     b.Property<DateTime>("FechaRiteve");
-
-                    b.Property<bool>("IsEntrega");
 
                     b.Property<string>("LicenciaRequerida")
                         .IsRequired();
