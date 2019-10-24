@@ -9,7 +9,7 @@
 <form method="post">
     @if (Model.Facturas.Count() > 0)
     {
-        <table id="tabla" class="table table-striped display nowrap" cellspacing="0" width="100%" style="margin-bottom: 0">
+        <table id="tabla" class="table table-striped display nowrap" cellspacing="0" width="100%" style="margin-bottom: 0; text-align:center">
             <thead>
                 <tr class="table-secondary">
                     <th>
@@ -49,7 +49,7 @@
                             @Html.DisplayFor(m => item.FormaDespacho)
                         </td>
                         <td>
-                            @Html.DisplayFor(m => item.Peso)
+                            @Html.DisplayFor(m => item.Peso)<a>kg</a>
                         </td>
                         <td>
                             @Html.DisplayFor(m => item.FormaCobro)

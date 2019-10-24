@@ -15,7 +15,7 @@
 <form method="post">
     @if (Model.FARYVET_FLS_VehiculoTransporte.Count() > 0)
     {
-        <table id="tabla" class="table-responsive table-striped display nowrap" cellspacing="0" width="100%" style="margin-bottom: 0;overflow-y:auto;">
+        <table id="tabla" class="table-responsive table-striped display nowrap" cellspacing="0" width="100%" style="margin-bottom: 0;overflow-y:auto; text-align:center">
             <thead>
                 <tr class="table-secondary">
                     <th>
@@ -76,16 +76,16 @@
                             @Html.DisplayFor(m => item.AnnioFabricacion)
                         </td>
                         <td>
-                            @Html.DisplayFor(m => item.CapacidadCarga)
+                            @Html.DisplayFor(m => item.CapacidadCarga)<a>kg</a>
                         </td>
                         <td>
-                            @Html.DisplayFor(m => item.CapacidadCombustible)
+                            @Html.DisplayFor(m => item.CapacidadCombustible)<a>L</a>
                         </td>
                         <td>
                             @Html.DisplayFor(m => item.FechaRiteve)
                         </td>
                         <td>
-                            @Html.DisplayFor(m => item.CostoMarchamo)
+                            <a>₡</a>@Html.DisplayFor(m => item.CostoMarchamo)
                         </td>
                         <td>
                             @Html.DisplayFor(m => item.CVOSenasa)
