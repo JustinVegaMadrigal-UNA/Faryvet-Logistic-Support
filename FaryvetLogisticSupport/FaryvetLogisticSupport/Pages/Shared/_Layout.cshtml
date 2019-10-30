@@ -19,6 +19,44 @@
             });
         });
     </script>
+    <script>
+        function fecha() {
+            var fechaActual = new Date();
+            var anio = fechaActual.getYear();
+            if (anio < 1000) {
+                anio += 1900
+            }
+            var dia = fechaActual.getDay();
+            var mes = fechaActual.getMonth();
+            var diam = fechaActual.getDate();
+            var arrayDia = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado");
+            var arrayMes = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre");
+
+            var horaActual = new Date();
+            var hora = horaActual.getHours();
+            var minuto = horaActual.getMinutes();
+
+            if (hora == 24) {
+                hora = 0;
+            } else if (hora > 12) {
+                hora = hora - 0;
+            }
+            if (hora < 10) {
+                hora = "0" + hora;
+            }
+            if (minuto < 10) {
+                minuto = "0" + minuto;
+            }
+
+            var reloj = document.getElementById("reloj");
+            reloj.textContent = " " + arrayDia[dia] + " " + diam + " de " + arrayMes[mes] + " " + anio + " | " + hora + ":" + minuto;
+            reloj.innerText = " " + arrayDia[dia] + " " + diam + " de " + arrayMes[mes] + " " + anio + " | " + hora + ":" + minuto;
+
+            setTimeout("fecha()", 1000);
+        }
+        fecha();
+
+    </script>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -32,7 +70,7 @@
     </environment>
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<body>
+<body onload="fecha();">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color:#4EAF48; font-family:Calibri; font-size:25px">
             <div class="container">
@@ -47,15 +85,15 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Conductores/IndexConductores">Conductores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/VehiculosTransporte/IndexVehiculosTransporte">Vehiculos</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/VehiculosTransporte/IndexVehiculosTransporte">Vehículos</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link text-dark dropdown-toggle" asp-area="" id="navbarDropdownMenuLink" data-toggle="dropdown">
                                 Facturas
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" asp-area="" asp-page="/Facturas/Facturas">Ver facturas</a>
-                                <a class="dropdown-item" asp-area="" asp-page="/Facturas/FacturasEspeciales">Ver facturas especiales</a>
+                                <a class="dropdown-item" asp-area="" asp-page="/Facturas/Facturas">Visualizar facturas</a>
+                                <a class="dropdown-item" asp-area="" asp-page="/Facturas/FacturasEspeciales">Visualizar facturas especiales</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -64,18 +102,26 @@
                     </ul>
                 </div>
             </div>
+            <form class="navbar-form navbar-right">
+                <div class="form-group" id="reloj">
+
+                </div>
+            </form>
         </nav>
     </header>
+
     <div class="container">
         <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">
+
             @RenderBody()
         </main>
     </div>
 
+
     <footer class="border-top footer text-muted" style="background-color:#4EAF48; font-family:Calibri;">
         <div class="container" style="color:black">
-            &copy; 2019 - FaryvetLogisticSupport - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2019 - Faryvet Logistic Support - <a asp-area="" asp-page="/Privacy">Privacidad</a>
         </div>
     </footer>
 
@@ -102,3 +148,4 @@
     @RenderSection("Scripts", required: false)
 </body>
 </html>
+
